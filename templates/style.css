@@ -1,0 +1,212 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    /* color: white !important; */
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+#data_container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #212121; */
+    background-color: whitesmoke;
+}
+
+/* custom------------------------------------------------------ */
+
+.nav-link {
+    color: black !important;
+}
+
+/* left-------------------------------------------------------- */
+
+#left_half{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 5px;
+    margin: 0 10px;
+}
+
+#display_group{
+    /* height: 100%;
+    background-color: white; */
+    /* background-color: #e7e6e6; */
+    /* background-color: #181818; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; */
+    /* width: 60vw;
+    height: 100vh; */
+}
+
+#display_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 620px;
+    width: 820px;
+}
+
+#feed_container{
+    /* width: 50vw;
+    height: 70vh; */
+    background-color: gray;
+
+}
+
+/* #feed {
+    width: 50vw;
+    height: 70vh;
+} */
+
+#im_feed {
+    /* width: 90%; */
+    max-width: 100%;
+    max-height: 100%;
+    height: inherit !important;
+    /* height: 100%; */
+}
+
+#flip_holder{
+    margin-top: 10px;
+}
+
+/* right-------------------------------------------------------- */
+
+#right_half{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    /* background-color: black; */
+}
+
+#choice_holder{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* background-color: gray; */
+}
+
+#sel_holder {
+    width: 100%;
+    /* height: 40vh; */
+    /* max-height: 70%; */
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+#tab_content_wrapper{
+    /* margin-top: 2px; */
+    height: 225px;
+    overflow: scroll;
+}
+
+#selTabContent{
+    /* overflow: scroll; */
+    margin-top: 10px;
+}
+
+#live_holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#control_display{
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    /* height: 30%; */
+}
+
+#control_pannel{
+    width: 60%;
+    margin-right: 10px;
+}
+
+#toggle_container{
+    /* width: 100px;
+    height: 200px; */
+    display: flex;
+    flex-direction: column;
+    font-size: 15px !important;
+}
+
+.switch_holders{
+    margin-top: 8px;
+}
+
+/* #control_holder{
+
+} */
+
+#json_display{
+    width: 40%;
+}
+
+#btn_holder{
+    /* height: 10%; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+}
+
+#confirm_btn{
+    width: 30%;
+}
+
+/* Toggle------------------------------------------- */
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 1.25px;
+	left: 1.25px;
+	width: 22.5px;
+	height: 22.5px;
+	background: #fff;
+	border-radius: 22.5px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #198754;
+}
+
+input:checked + label:after {
+	left: calc(100% - 1.25px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 32.5px;
+}
